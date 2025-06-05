@@ -1,0 +1,128 @@
+/* Reset general de márgenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y tipografía general */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff7bbf, #00bcd4); /* Gradiente suave entre rosado y celeste */
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilo del perfil */
+.perfil {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Sombra suave del perfil */
+.perfil:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+.perfil h1 {
+  font-size: 2.5rem;
+  color: #ff7bbf; /* Rosado suave */
+  margin-bottom: 10px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.perfil h1:hover {
+  color: #f50057; /* Rosado fuerte en hover */
+}
+
+/* Título de subtítulo */
+.perfil h2 {
+  font-size: 1.8rem;
+  color: #00bcd4; /* Celeste suave */
+  margin-bottom: 15px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.perfil h2:hover {
+  color: #0097a7; /* Celeste más oscuro en hover */
+}
+
+/* Párrafo de datos */
+.perfil p {
+  font-size: 1.2rem;
+  color: #757575; /* Gris suave para los textos */
+  margin-bottom: 20px;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.perfil p:hover {
+  color: #424242; /* Gris más oscuro cuando se pasa el cursor */
+}
+
+/* Lista de habilidades */
+.perfil ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.perfil li {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+  transition: color 0.3s ease;
+}
+
+.perfil li:hover {
+  color: #ff7bbf; /* Rosado suave cuando pasa el cursor */
+}
+
+.perfil li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00bcd4; /* Celeste suave para los checks */
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+/* Efecto en la lista cuando se pasa el mouse */
+.perfil li:hover::before {
+  color: #ff4081; /* Rosado fuerte en el check cuando pasa el cursor */
+}
+
+/* Estilo para el contenedor en pantallas pequeñas */
+@media (max-width: 768px) {
+  .perfil {
+    padding: 15px;
+  }
+
+  .perfil h1 {
+    font-size: 2rem;
+  }
+
+  .perfil h2 {
+    font-size: 1.5rem;
+  }
+
+  .perfil p {
+    font-size: 1rem;
+  }
+
+  .perfil li {
+    font-size: 1rem;
+  }
+}
